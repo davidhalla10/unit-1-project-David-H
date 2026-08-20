@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState } from 'react';
+import Header from "./components/header";
+import GetDistanceButton from './components/GetDistanceButton';
 import './App.css'
 
 function App() {
   return (
     <>
-    <div>
-      <h1>Welcome To True Carry</h1>
-    </div>
+      <div>
+        <Header />
+        <GetDistanceButton />
+      </div>
     </>
   )
 }
 
-export default App
+export default App;
