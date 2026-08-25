@@ -1,14 +1,12 @@
 import { useState } from 'react';
-import Header from "./components/header";
-import GetDistanceButton from './components/GetDistanceButton';
+import HomePage from "./components/pages/HomePage";
 import './App.css'
 
 function App() {
   return (
     <>
       <div>
-        <Header />
-        <GetDistanceButton />
+        <HomePage />
       </div>
     </>
   )
