@@ -1,19 +1,19 @@
 import React from 'react';
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
+import { Link } from "react-router";
 
 function HomePage () {
+
     return(
         <>  
-        <Header />
         <main>
-            <div>
+            <div id="body-container">
                 <h2>Welcome To True Carry!</h2>
                 <p>The app to get your true distance.</p>
-                <button>Get Your Distances</button> 
+                <Link to="/Bag">
+                    <button>Get Your Distances</button>
+                </Link>
             </div>
         </main>
-        <Footer />
         </>
     )
 }
