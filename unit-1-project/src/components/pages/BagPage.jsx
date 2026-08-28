@@ -1,5 +1,5 @@
-import React from "react";
-
+import ClubList from "../ClubList";
+import { useState } from "react";
 
 const startingClubs = [
     { id: 1, name: "Driver", type: "Driver", claimedYards: 250},
@@ -8,13 +8,20 @@ const startingClubs = [
 ];
 
 function BagPage () {
+
+const [clubs, setClubs] = useState(startingClubs);
+
+const handleDelete = (id) => {
+    console.error('handleDelete got: ', id);
+    setClubs(clubs.filter((club) => club.id !== id));
+}
+
     return(
         <>
         <main>
             <h1>My Bag</h1>
             <p>Set what you think each club carries, then log a session to find out.</p>
-
-
+            <ClubList clubs={clubs} onDelete={handleDelete}/>
         </main>
         
         </>

@@ -1,12 +1,12 @@
 import React from "react";
 import ClubCard from "./ClubCard";
 
-function ClubList({ clubs }) {
+function ClubList({ clubs, onDelete }) {
     return(
         <>
-        <ul>
+        <ul className="club-grid">
             {clubs.map((club) => (
-                <ClubCard key={club.id} club={club} /> 
+                <ClubCard key={club.id} club={club} onDelete={onDelete} /> 
             ))}
         </ul>
         </>
