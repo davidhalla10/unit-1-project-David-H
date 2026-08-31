@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Routes, Route } from "react-router";
+import HomePage from "./components/pages/HomePage";
+import BagPage from "./components/pages/BagPage";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+
 
 function App() {
   return (
-    <>
-    <div>
-      <h1>Welcome To True Carry</h1>
-    </div>
-    </>
+      <div id="body-container">
+        <Header />
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/Bag" element={<BagPage />} />
+
+        </Routes>
+        <Footer />
+      </div>
   )
 }
 
-export default App
+export default App;
