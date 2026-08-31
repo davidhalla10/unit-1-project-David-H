@@ -1,6 +1,7 @@
 import React from "react";
 import ClubCard from "./ClubCard";
 
+
 function ClubList({ clubs, onDelete }) {
     return(
         <>
