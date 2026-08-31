@@ -22,9 +22,3 @@ footer{
 #body-container main{
   flex: 1;
 }
-
-.about-page{
-  max-width: 700px;
-  margin: 0 auto;
-
-}

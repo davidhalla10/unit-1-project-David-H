@@ -4,8 +4,9 @@ const AboutPage = () => {
     return (
         <>
         <div className="about-page">
-            <h1>About True Carry</h1>
 
+            <h1>About True Carry</h1>
+            
                 <h2>Why True Carry Exists</h2>
                     <p>
                         Ask most golfers how far they hit their 7-iron and you'll get a confident number.
@@ -48,6 +49,7 @@ const AboutPage = () => {
                         Whenever I'm stood on a par 3, I never know what club to take out because I generally don't how far my clubs go. I'm sick of guessing
                         how far my clubs go. It is costing me rounds that I should be scoring better on. If you are having trouble on how far your clubs really go, join the True Carry Family!
                     </p>
+
         </div>
         </>
     )
