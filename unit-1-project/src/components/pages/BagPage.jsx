@@ -4,7 +4,8 @@ import { useState } from "react";
 const startingClubs = [
     { id: 1, name: "Driver", type: "Driver", claimedYards: 250},
     { id: 2, name: "7-iron", type: "Iron", claimedYards: 150},
-    { id: 3, name: "Pitching Wedge", type: "Wedge", claimedYards: 110}
+    { id: 3, name: "Pitching Wedge", type: "Wedge", claimedYards: 110},
+    { id: 4, name: "9-iron", type: "Iron", claimedYards: 130}
 ];
 
 function BagPage () {
