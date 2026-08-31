@@ -43,8 +43,13 @@ const [values, setValues] = useState(emptyForm);
             <div>
                 <label htmlFor="name">Club name</label>
                 <input id="name" name="name" type="text" value={values.name} onChange={change}/>
-                <button type="submit">Add Club</button>
             </div>
+            <div>
+                <label htmlFor="type">Club type</label>
+                <input id="type" name="type" value={values.type} onChange={change}/>
+            </div>
+
+            <button type="submit">Add Club</button>
         </form>
 
         </>
