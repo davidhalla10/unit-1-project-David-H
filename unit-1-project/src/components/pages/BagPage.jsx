@@ -19,7 +19,7 @@ function handleAdd (values) {
         id: Date.now(),
         name: values.name,
         type: values.type,
-        claimedYards: Numnber(values.claimedYards),
+        claimedYards: Number(values.claimedYards),
         inBag: values.inBag,
     }
     setClubs([...clubs, newClub])

@@ -31,6 +31,7 @@ const [values, setValues] = useState(emptyForm);
 
     function handleSubmit (event) {
         event.preventDefault();
+        console.error("Submit fired", values);
         onAdd(values);
         setValues(emptyForm);
     }
