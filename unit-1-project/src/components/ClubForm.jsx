@@ -31,7 +31,6 @@ const [values, setValues] = useState(emptyForm);
 
     function handleSubmit (event) {
         event.preventDefault();
-        console.error("Submit fired", values);
         onAdd(values);
         setValues(emptyForm);
     }
@@ -46,7 +45,14 @@ const [values, setValues] = useState(emptyForm);
             </div>
             <div>
                 <label htmlFor="type">Club type</label>
-                <input id="type" name="type" value={values.type} onChange={change}/>
+                <select id="type" name="type" value={values.type} onChange={change}>
+                <option value="Driver">Driver</option>
+                <option value="Wood">Wood</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Iron">Iron</option>
+                <option value="Wedge">Wedge</option>
+                </select>
+
             </div>
             <div>
                 <label htmlFor="claimedYards">Claimed Carry</label>
