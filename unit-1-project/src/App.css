@@ -2,7 +2,6 @@ body{
   background-color: antiquewhite;
   min-height: 100vh;
   margin: 0;
-
 }
 
 #body-container{
@@ -20,6 +19,6 @@ footer{
   padding: 15px clamp(20px, 4vw, 30px) 20px;
 }
 
-main{
+#body-container main{
   flex: 1;
 }
