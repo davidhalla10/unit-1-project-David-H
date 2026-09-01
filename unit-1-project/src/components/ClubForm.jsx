@@ -38,7 +38,7 @@ const [values, setValues] = useState(emptyForm);
 
     return(
         <>
-        <form onSubmit={handleSubmit}>
+        <form className="club-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Club name</label>
                 <input id="name" name="name" type="text" value={values.name} onChange={change}/>
@@ -59,7 +59,7 @@ const [values, setValues] = useState(emptyForm);
                 <input id="claimedYards" name="claimedYards" type="number" value={values.claimedYards} onChange={change}/>
             </div>
 
-            <button type="submit">Add Club</button>
+            <button className="btn" type="submit">Add Club</button>
         </form>
 
         </>

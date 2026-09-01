@@ -7,9 +7,18 @@
     gap: 20px;
 }
 
+.club-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
 .club-card{
     background: #216810;
     border-radius: 10px;
+    border: 2px solid #216810;
     padding: 1rem;
     color:antiquewhite
 }
@@ -28,4 +37,70 @@ main {
   max-width: 800px;
   margin: 0 auto;
   font-size: 17px;
+}
+
+.flag-icon{
+    width: 40px;
+    height: auto;
+}
+
+.btn-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #216810;
+}
+
+.btn-card{
+    background-color: antiquewhite;
+    color:#216810;
+    border-radius: 10px;
+    border: 2px solid #216810;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-card:hover{
+    background-color:#216810;
+    color:antiquewhite;
+}
+
+.target-grid{
+    padding: 0;
+    margin: 36px 0;
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+.outcome-grid{
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    display: grid;
+    gap: 10px;
+}
+
+.btn-outcome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+}
+
+@media (min-width: 600px) {
+    .club-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .target-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .outcome-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
 }

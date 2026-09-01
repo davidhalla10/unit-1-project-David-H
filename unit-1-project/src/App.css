@@ -10,6 +10,21 @@ body{
   min-height: 100vh;
 }
 
+.btn{
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #216810;
+  background-color: #216810;
+  color:antiquewhite;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: antiquewhite;
+  color:#216810;
+}
+
 header,
 footer{
   background:#216810;

@@ -7,8 +7,8 @@ function ClubCard({ club, onDelete, onLog }) {
             <h3>{club.name}</h3>
             <p>{club.type}</p>
             <p>You said: {club.claimedYards} yds</p>
-            <button onClick={() => onDelete(club.id)}>Delete</button>
-            <button onClick={() => onLog(club.id)}>Get Distance</button>
+            <button className="btn-card" onClick={() => onDelete(club.id)}>Delete</button>
+            <button className="btn-card" onClick={() => onLog(club.id)}>Get Distance</button>
         </li>
 
         </>
