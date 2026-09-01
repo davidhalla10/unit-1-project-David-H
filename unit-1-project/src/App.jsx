@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/Bag" element={<BagPage />} />
+            <Route path="/bag" element={<BagPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/log/:clubId" element={<LogPage />} />
         </Routes>
