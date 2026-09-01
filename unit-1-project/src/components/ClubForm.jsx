@@ -59,7 +59,7 @@ const [values, setValues] = useState(emptyForm);
                 <input id="claimedYards" name="claimedYards" type="number" value={values.claimedYards} onChange={change}/>
             </div>
 
-            <button type="submit">Add Club</button>
+            <button className="btn" type="submit">Add Club</button>
         </form>
 
         </>
