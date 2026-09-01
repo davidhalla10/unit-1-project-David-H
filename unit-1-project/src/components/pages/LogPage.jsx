@@ -22,6 +22,15 @@ function LogPage () {
         setStep("shots");
     }
 
+    function logShot (outcome) {
+        const newShot = {
+            id: Date.now(),
+            label: outcome.label,
+            yards: target + outcome.offset,
+        }
+        setShots([...shots, newShot]);
+    }
+
     if (step === "target") {
         return (
         <>
