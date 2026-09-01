@@ -88,7 +88,20 @@ function LogPage () {
         )
     }
 
-    return <h2>Shot Tracker</h2>
+    let total = 0;
+    for (const shot of shots) {
+        total = total + shot.yards;
+    }
+
+    const average = Math.round(total / shots.length);
+
+    return (
+        <main>
+            <h1>Your True Carry</h1>
+            <p>Shots logged: {shots.length}</p>
+            <p>Actual Yardge: {average} </p>
+        </main>
+    )
 }
 
 export default LogPage;
