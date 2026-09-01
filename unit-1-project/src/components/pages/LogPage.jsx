@@ -40,7 +40,7 @@ function LogPage () {
         <>
         <main>
             <h1>Select A Target</h1>
-            <ul>
+            <ul className="target-grid">
                 {targets.map((yards) => (
                     <li key={yards}>
                         <button onClick={() => pickTarget(yards)} className="btn-flag">
