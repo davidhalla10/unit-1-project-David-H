@@ -1,6 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
+const outcomes = [
+    { label: "Way short", offset: -16 },
+    { label: "A little short", offset: -8 },
+    { label: "Pin high", offset: 0 },
+    { label: "A little long", offset: 8 },
+    { label: "Way Long", offset: 16 },
+]
+
 const targets = [50, 75, 100, 125, 150, 175, 200, 225];
 
 function LogPage () {
