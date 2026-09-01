@@ -14,7 +14,8 @@ function LogPage () {
         setStep("shots");
     }
 
-    return (
+    if (step === "target") {
+        return (
         <>
         <main>
             <h1>Select A Target</h1>
@@ -30,6 +31,9 @@ function LogPage () {
         </main>
         </>
     )
+    }
+
+    return <h2>Shot Tracker</h2>
 }
 
 export default LogPage;
