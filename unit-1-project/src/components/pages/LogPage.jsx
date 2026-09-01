@@ -43,7 +43,7 @@ function LogPage () {
             <ul className="target-grid">
                 {targets.map((yards) => (
                     <li key={yards}>
-                        <button onClick={() => pickTarget(yards)} className="btn-flag">
+                        <button onClick={() => pickTarget(yards)} className="btn btn-flag">
                             <img src="/golf-flag.png" className="flag-icon"></img>
                             <span>{yards} yds</span>
                         </button>
@@ -62,10 +62,10 @@ function LogPage () {
                 <h1>Track Your Shots</h1>
                 <p>Aiming at the {target} yds flag</p>
 
-                <ul>
+                <ul className="outcome-grid">
                     {outcomes.map((outcome) => (
                         <li key={outcome.label}>
-                            <button onClick={() => logShot(outcome)}>
+                            <button className="btn btn-outcome" onClick={() => logShot(outcome)}>
                                 <span>{outcome.label}</span>
                             </button>
                         </li>
@@ -80,7 +80,7 @@ function LogPage () {
                     ))}
                 </ul>
 
-                <button onClick={calculate} disabled={shots.length < 5}>
+                <button className="btn" onClick={calculate} disabled={shots.length < 5}>
                     Calculate my distance
                 </button>
 

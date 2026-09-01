@@ -61,7 +61,11 @@ main {
     border: 2px solid #216810;
     cursor: pointer;
     padding: 5px;
+}
 
+.btn-card:hover{
+    background-color:#216810;
+    color:antiquewhite;
 }
 
 .target-grid{
@@ -70,4 +74,21 @@ main {
     display: grid;
     gap: 10px;
     list-style: none;
+}
+
+.outcome-grid{
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    display: grid;
+    gap: 10px;
+}
+
+.btn-outcome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
 }
