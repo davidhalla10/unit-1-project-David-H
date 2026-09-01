@@ -10,7 +10,7 @@ function HomePage () {
                 <h1>Welcome To True Carry!</h1>
                 <p>The app to get your true distance.</p>
                 <Link to="/bag">
-                    <button>Get Your Distances</button>
+                    <button className="btn">Get Your Distances</button>
                 </Link>
             </div>
 

@@ -7,6 +7,14 @@
     gap: 20px;
 }
 
+.club-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
 .club-card{
     background: #216810;
     border-radius: 10px;
@@ -51,7 +59,7 @@ main {
     color:#216810;
     border-radius: 10px;
     border: 2px solid #216810;
-
+    cursor: pointer;
     padding: 5px;
 
 }
