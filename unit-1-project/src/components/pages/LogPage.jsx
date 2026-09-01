@@ -79,6 +79,10 @@ function LogPage () {
                     ))}
                 </ul>
 
+                <button onClick={calculate} disabled={shots.length < 5}>
+                    Calculate my distance
+                </button>
+
             </main>
             </>
         )
