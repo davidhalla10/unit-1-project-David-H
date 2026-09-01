@@ -98,8 +98,9 @@ function LogPage () {
     return (
         <main>
             <h1>Your True Carry</h1>
+            <p>Aiming at the {target} yds flag</p>
             <p>Shots logged: {shots.length}</p>
-            <p>Actual Yardge: {average} </p>
+            <p>Average Yardge: {average} </p>
         </main>
     )
 }
