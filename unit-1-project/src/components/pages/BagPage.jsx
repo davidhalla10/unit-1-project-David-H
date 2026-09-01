@@ -2,6 +2,7 @@ import React from 'react';
 import ClubList from "../ClubList";
 import ClubForm from "../ClubForm";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const startingClubs = [
     { id: 1, name: "Driver", type: "Driver", claimedYards: 250},
@@ -12,7 +13,12 @@ const startingClubs = [
 
 function BagPage () {
 
+const navigate = useNavigate();
 const [clubs, setClubs] = useState(startingClubs);
+
+function log (id) {
+    navigate(`/log/${id}`);
+}
 
 function handleAdd (values) {
     const newClub = {
@@ -36,7 +42,7 @@ function handleDelete (id) {
             <h1>My Bag</h1>
             <p>Set what you think each club carries, then log a session to find out.</p>
             <ClubForm onAdd={handleAdd}/>
-            <ClubList clubs={clubs} onDelete={handleDelete}/>
+            <ClubList clubs={clubs} onDelete={handleDelete} onLog={log}/>
         </main>
         
         </>

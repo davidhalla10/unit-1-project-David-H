@@ -1,6 +1,6 @@
 import React from "react";
 
-function ClubCard({ club, onDelete }) {
+function ClubCard({ club, onDelete, onLog }) {
     return(
         <>
         <li className="club-card">
@@ -8,6 +8,7 @@ function ClubCard({ club, onDelete }) {
             <p>{club.type}</p>
             <p>You said: {club.claimedYards} yds</p>
             <button onClick={() => onDelete(club.id)}>Delete</button>
+            <button onClick={() => onLog(club.id)}>Get Distance</button>
         </li>
 
         </>
