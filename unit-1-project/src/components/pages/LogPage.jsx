@@ -66,10 +66,20 @@ function LogPage () {
                         <li key={outcome.label}>
                             <button onClick={() => logShot(outcome)}>
                                 <span>{outcome.label}</span>
+                                <span> {target + outcome.offset} yds</span>
                             </button>
                         </li>
                     ))}
                 </ul>
+
+                <h2>Shots this session ({shots.length})</h2>
+
+                <ul>
+                    {shots.map((shot) => (
+                        <li key={shot.id}>{shot.label} ({shot.yards}) yds</li>
+                    ))}
+                </ul>
+
             </main>
             </>
         )
