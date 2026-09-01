@@ -29,3 +29,17 @@ main {
   margin: 0 auto;
   font-size: 17px;
 }
+
+.flag-icon{
+    width: 40px;
+    height: auto;
+}
+
+.btn-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}

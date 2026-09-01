@@ -43,7 +43,8 @@ function LogPage () {
             <ul>
                 {targets.map((yards) => (
                     <li key={yards}>
-                        <button onClick={() => pickTarget(yards)}>
+                        <button onClick={() => pickTarget(yards)} className="btn-flag">
+                            <img src="/golf-flag.png" className="flag-icon"></img>
                             <span>{yards} yds</span>
                         </button>
                     </li>
