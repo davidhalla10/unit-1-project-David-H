@@ -20,6 +20,11 @@ body{
   cursor: pointer;
 }
 
+.btn:hover{
+  background-color: antiquewhite;
+  color:#216810;
+}
+
 header,
 footer{
   background:#216810;
