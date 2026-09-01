@@ -92,3 +92,15 @@ main {
     padding: 16px;
     font-size: 16px;
 }
+
+@media (min-width: 600px) {
+    .club-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .target-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .outcome-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
