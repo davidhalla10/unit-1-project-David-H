@@ -4,6 +4,7 @@ import ClubForm from "../ClubForm";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
+//Hardcoded array for club cards on club picker screen
 const startingClubs = [
     { id: 1, name: "Driver", type: "Driver", claimedYards: 250},
     { id: 2, name: "7-iron", type: "Iron", claimedYards: 150},
@@ -20,6 +21,8 @@ function log (id) {
     navigate(`/log/${id}`);
 }
 
+// Used Date.now() to generate a
+// unique ID for each club.
 function handleAdd (values) {
     const newClub = {
         id: Date.now(),
