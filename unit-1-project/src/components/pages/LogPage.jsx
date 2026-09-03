@@ -17,6 +17,7 @@ function LogPage () {
     const [step, setStep] = useState('target');
     const [shots, setShots] = useState([]);
 
+    // useState for different screens
     function pickTarget (yards) {
         setTarget(yards);
         setStep("shots");
